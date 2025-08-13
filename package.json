@@ -1,5 +1,5 @@
 {
-  "name": "grow-your-tree-app",
+  "name": "grow-your-tree-app-v2",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -12,7 +12,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zustand": "^4.5.2",
-    "clsx": "^2.1.1"
+    "clsx": "^2.1.1",
+    "firebase": "^10.10.0",
+    "lottie-react": "^2.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.69",

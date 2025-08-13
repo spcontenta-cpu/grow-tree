@@ -1,29 +1,22 @@
-# Grow Your Tree — PWA Habit & Health Tracker
+# Grow Your Tree v2
 
-A responsive React + Vite + Tailwind app that tracks:
-- Meals + nutrition (protein, carbs, fat, calories) from a built-in offline food DB for chicken, eggs, nuts, dates, raisins, chana, peanuts.
-- Water intake (3.5L goal, quick add buttons).
-- Steps (10,000 goal).
-- Workout (evening) — warm-up, main, cool down.
-- Study sessions — AI & AWS.
-- Daily journal + picture of the day.
-- Gamified plant growth (seed → sprout → small plant → bush → tree). Completing all tasks in a day grows the plant; missing a day resets.
+This is a ready-to-run React + Vite + Tailwind project scaffold for the "Grow Your Tree" habit tracker.
+Features included:
+- Onboarding collects weight, height, age, sex, activity and computes BMR/TDEE and targets.
+- Offline food DB for quick macros; add foods with grams to compute totals.
+- Firebase config placeholder (fill `src/firebaseConfig.js` to enable Auth & Firestore).
+- PWA-ready build not included, but can be added.
 
-## Quick Start
-```bash
+## Run locally
+1. Install Node.js (v18+ recommended)
+2. Run:
+```
 npm install
 npm run dev
 ```
-Then open the URL shown (usually http://localhost:5173).
+3. Open http://localhost:5173
 
-## Build
-```bash
-npm run build
-npm run preview
-```
+## Deploy to Netlify
+- Push repo to GitHub and connect in Netlify. Set build command `npm run build` and publish directory `dist`.
+- Make sure to add `FIREBASE_CONFIG` or replace `src/firebaseConfig.js` with real config before enabling Firebase features.
 
-## Notes
-- All data is saved in `localStorage` automatically. Login just stores your name and keeps state.
-- Click **Next Day** in the header to advance a day. If all daily goals are complete, the plant grows; otherwise, it resets.
-- Tailwind is preconfigured.
-- No external APIs needed — runs entirely offline.
